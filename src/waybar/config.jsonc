@@ -13,7 +13,7 @@
         "max-length": 10
     },
     "memory": {
-        "interval": 30,
+        "interval": 15,
         "format": " {}%",
         "max-length": 10
     },
@@ -23,6 +23,7 @@
     "network": {
 		"tooltip": false,
 		"format-wifi": "  {essid} {bandwidthUpBits} {bandwidthDownBits}",
+        "format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor"
 	},
     "bluetooth": {
@@ -33,8 +34,8 @@
 		"tooltip": false,
 		"format": " {}%",
 		"interval":1,
-        "on-scroll-up": "brightnessctl s 10%+",
-		"on-scroll-down": "brightnessctl s 10%-"
+        "on-scroll-up": "brightnessctl s 5%+",
+		"on-scroll-down": "brightnessctl s 5%-"
 	},
     "pulseaudio": {
 		"tooltip": false,
@@ -48,14 +49,29 @@
 	},
     "clock": {
         "interval": 10,
-        "format": "{:%H:%M %Y-%m-%d}"
+        "format": "{:%H:%M %Y-%m-%d}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 4,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#f1fa8c'><b>{}</b></span>",
+                              "weeks":      "<span color='#50fa7b'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff5555'><b>{}</b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
     },
     "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
         "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
