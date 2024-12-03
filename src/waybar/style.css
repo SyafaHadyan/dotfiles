@@ -60,7 +60,14 @@ window#waybar {
 	margin-bottom: 0px;
 	transition: none;
 	color: #f8f8f2;
-	background: #282a36;
+	background: #121527;
+}
+
+
+#workspaces button.active {
+	background-size: 2px;
+	background: #28335A;
+	font-weight: bold;
 }
 
 #network {

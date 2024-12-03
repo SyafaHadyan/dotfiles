@@ -18,6 +18,9 @@
         "max-length": 10
     },
     "hyprland/workspaces": {
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
         "format": "{icon}"
     },
     "network": {
@@ -72,6 +75,7 @@
                     }
     },
     "battery": {
+        "interval": 15,
         "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
