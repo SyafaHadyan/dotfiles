@@ -25,7 +25,7 @@
     },
     "network": {
 		"tooltip": false,
-		"format-wifi": "  {essid} {bandwidthUpBits} {bandwidthDownBits}",
+		"format-wifi": "  {essid} {bandwidthDownBits} {bandwidthUpBits}",
         "format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor"
 	},
