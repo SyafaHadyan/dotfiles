@@ -4,21 +4,25 @@
     font-family: "JetbrainsMono" ;
 	font-size: 10px;
 	min-height: 10px;
-	border-radius: 8px;
 }
 
 window#waybar {
+	/*min-height: 30px;*/
+	border: none;
+	border-radius: 0;
 	background: transparent;
+	/*box-shadow: 0px 0px 5px black;*/
+	/*background: #282a36;*/
 }
 
-#window {
+/* #window {
 	margin-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
     color: transparent;
 	background: transparent;
-}
+} */
 
 #custom-launcher {
 	margin-top: 6px;
