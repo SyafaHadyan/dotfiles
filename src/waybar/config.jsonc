@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/media"],
+	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["network","bluetooth","backlight","pulseaudio","clock","battery","custom/power"],
     "custom/launcher":{
@@ -16,6 +16,11 @@
         "interval": 15,
         "format": " {}%",
         "max-length": 10
+    },
+    "tray menu": {
+        "icon-size": 20,
+        "spacing": 10,
+        "show-passive-items": true
     },
     "hyprland/workspaces": {
         "disable-scroll": false,
