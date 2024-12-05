@@ -5,7 +5,7 @@
 	"modules-right": ["network","bluetooth","backlight","pulseaudio","clock","battery","custom/power"],
     "custom/launcher":{
         "format": " ",
-        "on-click": "wofi --show run"
+        "on-click": "rofi -show run"
     },
     "cpu": {
         "interval": 15,
