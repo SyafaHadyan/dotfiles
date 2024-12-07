@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","custom/fan","tray"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["network","bluetooth","backlight","pulseaudio","clock","battery","custom/power"],
     "custom/launcher":{
@@ -12,6 +12,10 @@
         "format": " {}%",
         "max-length": 10
     },
+    // "custom/fan": {
+    //     "interval": 60,
+    //     "format": "$(sensors | grep cpu_fan | cut -d':' -f2 | tr -d ' ')"
+    // },
     "memory": {
         "interval": 15,
         "format": " {}%",
@@ -29,8 +33,9 @@
         "format": "{icon}"
     },
     "network": {
+        "interval": 15,
 		"tooltip": false,
-		"format-wifi": "  {essid} {bandwidthDownBits} {bandwidthUpBits}",
+		"format-wifi": "  {essid} {bandwidthDownBytes} {bandwidthUpBytes}",
         "format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor"
 	},
