@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left":
     [
-        "custom/launcher","cpu","memory","custom/fan","tray"
+        "custom/launcher","cpu","memory","network","tray"
     ],
     "modules-center":
     [
@@ -10,7 +10,7 @@
     ],
     "modules-right":
     [
-        "network","bluetooth","backlight","pulseaudio","clock","battery","custom/power"
+        "bluetooth","backlight","pulseaudio","clock","battery","custom/power"
     ],
     "custom/launcher":
     {
@@ -72,7 +72,7 @@
         "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "format-icons":
         {
-            "default": ["", "", ""]
+            "default": ["", " ", " "]
         }
     },
     "clock":
