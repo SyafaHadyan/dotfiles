@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\e[0;36m\u\e[0m@\h \W]\$ '
+PS1='\e[0;36m󰣇\e[0m [\e[0;36m\u\e[0m@\h \W] \e[1;32m\d \t\e[0m up `uptime | cut -d " " -f5 | tr -d ","` `uname -sr`\n\$ '
 
 ## Path
 export PATH=$HOME/.cargo/bin:$PATH
