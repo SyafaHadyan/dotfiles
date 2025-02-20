@@ -10,7 +10,7 @@
     ],
     "modules-right":
     [
-        "bluetooth","backlight","pulseaudio","clock","battery","custom/power"
+        "custom/weather","bluetooth","backlight","pulseaudio","clock","battery","custom/power"
     ],
     "custom/launcher":
     {
@@ -52,9 +52,16 @@
     {
         "interval": 15,
         "tooltip": false,
-        "format-wifi": "  {essid} {bandwidthDownBytes} {bandwidthUpBytes}",
+        "format-wifi": "  {essid}",
         "format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor"
+    },
+    "custom/weather":
+    {
+        "interval": 30,
+        "format": "{}",
+        "tooltip": false,
+        "exec": "curl wttr.in/Malang?format=1"
     },
     "bluetooth":
     {
