@@ -19,9 +19,9 @@
         "cpu",
         "memory",
         "battery",
-        "network",
         "pulseaudio",
         "backlight",
+        "network",
         "custom/control"
     ],
     "custom/launcher": {
@@ -30,9 +30,9 @@
         "tooltip": false
     },
     "custom/weather": {
-        "interval": 60,
+        "interval": 300,
         "format": "{}",
-        "exec": "curl wttr.in/?format=1",
+        "exec": "bash ~/.config/waybar/weather.sh",
         "tooltip": false
     },
     "hyprland/workspaces": {
@@ -46,7 +46,7 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%H:%M - %a, %d %b %Y}",
+        "format": "{:%I:%M %p - %a, %d %b %Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -60,8 +60,7 @@
                 "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
-        },
-        "tooltip": false
+        }
         // "actions": {
         //     "on-scroll-up": "tz_up",
         //     "on-scroll-down": "tz_down",
@@ -131,7 +130,7 @@
         "tooltip": false
     },
     "custom/control": {
-        "format": " ",
+        "format": "󰈆 ",
         "on-click": "killall waybar",
         "tooltip": false
     }
