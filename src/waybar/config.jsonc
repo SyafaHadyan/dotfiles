@@ -103,7 +103,7 @@
     "network": {
         "format-wifi": "{essid}",
         "format-ethernet": "eth",
-        "tooltip-format": "{bandwidthUpBits} {bandwidthDownBits}",
+        "tooltip-format": "{bandwidthDownBits} {bandwidthUpBits}",
         "format-disconnected": "no network",
         "on-click": "nm-connection-editor",
         "interval": 5
