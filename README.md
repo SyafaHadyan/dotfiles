@@ -2,4 +2,6 @@
 
 Config Dotfiles
 
-![Screenshot](https://github.com/SyafaHadyan/dotfiles/blob/main/src/screenshots/screenshot.png)
+![Screenshot](screenshots/screenshot-0.png)
+
+![Screenshot](screenshots/screenshot-1.png)
