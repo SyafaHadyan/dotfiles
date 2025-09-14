@@ -23,6 +23,9 @@ alias swm='git checkout main; git fetch; git pull; git branch; git st'
 alias date-utc='date -u +%Y-%m-%d_%H-%M-%S_%z'
 alias md='udisksctl mount --block-device /dev/sdb1'
 alias ud='udisksctl unmount --block-device /dev/sdb1'
+alias tsex='tailscale set --exit-node'
+alias tsend='tailscale set --exit-node='
+alias tst='tailscale status'
 
 ## Start
 #fastfetch
