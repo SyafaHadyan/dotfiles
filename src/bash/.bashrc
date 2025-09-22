@@ -7,8 +7,12 @@
 
 PS1='╭─ \e[0;36m󰣇\e[0m  [\e[0;36m\u\e[0m@\h \W] \e[1;32m\d \t\e[0m `uptime -p` `uname -sr`\n╰─   '
 
+## env
+source ~/.env
+
 ## Path
 export PATH=$HOME/.cargo/bin:$PATH
+export EDITOR=nvim
 export MANPAGER='nvim +Man!'
 export HISTFILESIZE=5000
 export HISTSIZE=5000
@@ -26,6 +30,9 @@ alias ud='udisksctl unmount --block-device /dev/sdb1'
 alias tsex='tailscale set --exit-node'
 alias tsend='tailscale set --exit-node='
 alias tst='tailscale status'
+alias ce='EDITOR=nvim crontab -e'
+alias cl='crontab -l'
+alias ipfo='curl -s ipinfo.io?token=$IPINFOIO_TOKEN | jq'
 
 ## Start
 #fastfetch
