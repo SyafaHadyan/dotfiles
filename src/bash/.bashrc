@@ -33,6 +33,7 @@ alias tst='tailscale status'
 alias ce='EDITOR=nvim crontab -e'
 alias cl='crontab -l'
 alias ipfo='curl -s ipinfo.io?token=$IPINFOIO_TOKEN | jq'
+alias iprf='iperf3 -c $IPERF3_SERVER -b 0'
 
 ## Start
 #fastfetch
