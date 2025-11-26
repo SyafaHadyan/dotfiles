@@ -18,22 +18,31 @@ export HISTFILESIZE=5000
 export HISTSIZE=5000
 
 ## Alias
+alias sbash='source ~/.bashrc'
+alias ..='cd ..'
 alias sl='ls'
 alias ls='ls -lah --group-directories-first --color=auto'
 alias mv='mv -i'
+alias please='sudo'
+alias pls='please'
 alias grep='grep --color=auto'
 alias pipes.sh='pipes.sh -p 4 -R'
+alias jawa='java'
 alias swm='git checkout main; git fetch; git pull; git branch; git st'
 alias date-utc='date -u +%Y-%m-%d_%H-%M-%S_%z'
 alias md='udisksctl mount --block-device /dev/sdb1'
 alias ud='udisksctl unmount --block-device /dev/sdb1'
 alias tsex='tailscale set --exit-node'
 alias tsend='tailscale set --exit-node='
+alias tssub='tailscale set --accept-routes'
+alias tssubend='tailscale set --accept-routes=false'
 alias tst='tailscale status'
 alias ce='EDITOR=nvim crontab -e'
 alias cl='crontab -l'
-alias ipfo='curl -s ipinfo.io?token=$IPINFOIO_TOKEN | jq'
+alias ipfo='~/script/ipinfoio.sh'
 alias iprf='iperf3 -c $IPERF3_SERVER -b 0'
+alias shkg='~/script/ssh-keygen.sh'
+alias cub='cd ~/Documents/Universitas\ Brawijaya/Class/Semester\ 3/'
 
 ## Start
 #fastfetch
@@ -41,7 +50,7 @@ alias iprf='iperf3 -c $IPERF3_SERVER -b 0'
 #fortune | cowsay
 
 ## QT5
-#export QT_QPA_PLATFORMTHEME="qt5ct"
+#export QT_QPA_PLATFORMTHEME=""
 
 ## Wayland
 #export QT_QPA_PLATFORM=wayland
@@ -50,3 +59,5 @@ alias iprf='iperf3 -c $IPERF3_SERVER -b 0'
 #export XDG_CURENT_SESSION_TYPE=wayland
 
 eval "$(thefuck --alias)"
+
+complete -C /usr/bin/terraform terraform
